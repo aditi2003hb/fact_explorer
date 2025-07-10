@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Random Fact Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Random Fact Explorer</h1>
+    <p class="subtext">Choose a category to discover a new fact</p>
+
+    <div class="buttons">
+      <button onclick="getFact('science')">🧪 Science</button>
+      <button onclick="getFact('history')">🏛️ History</button>
+      <button onclick="getFact('tech')">💻 Tech</button>
+      <button onclick="getFact('life')">🌱 Life</button>
+    </div>
+
+    <div class="card" id="fact-card">
+      <div class="front" id="fact-text">Click a category above 👆</div>
+      <div class="back" id="fact-category">—</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
